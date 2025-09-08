@@ -1,6 +1,64 @@
-<div class="product-box">
-  <img src="images/plant1.png" alt="Plant">
-  <h3 class="product-title">Aloe Vera</h3>
-  <span class="price">$10</span>
-  <button class="add-cart">Add to Cart</button>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plant Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="nav-bar">
+      <i class="bx bx-menu" id="menu-bar"></i>
+      <a href="#" class="logo">Plant Shop</a>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="icons">
+        <i class="bx bx-user" id="login-btn"></i>
+        <i class="bx bx-cart" id="cart-btn"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Products -->
+  <section class="shop" id="shop">
+    <h1 class="heading">Our Plants</h1>
+    <div class="product-container">
+      <div class="product-box">
+        <img src="images/plant1.jpg" alt="Plant 1">
+        <h3 class="product-title">Aloe Vera</h3>
+        <span class="price">$10</span>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+      <div class="product-box">
+        <img src="images/plant2.jpg" alt="Plant 2">
+        <h3 class="product-title">Snake Plant</h3>
+        <span class="price">$15</span>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+      <div class="product-box">
+        <img src="images/plant3.jpg" alt="Plant 3">
+        <h3 class="product-title">Peace Lily</h3>
+        <span class="price">$12</span>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-items-container">
+    <h2>Your Cart</h2>
+    <div class="cart-content"></div>
+    <div class="cart-footer">
+      <span>Total: </span><span class="total-price">$0</span>
+    </div>
+    <button class="btn-buy">Buy Now</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
